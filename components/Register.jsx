@@ -68,7 +68,7 @@ export default function Register() {
 
   return (
     <form onSubmit={handleSubmit} className="w-10/12 mx-auto p-8 my-2 bg-white rounded-lg shadow-md">
-      <p className='text-center font-bold pb-2 underline text-blue-500'>Student's Enrollment Form I.M.H. Education Centre Bareilly</p>
+      <p className='text-center font-bold pb-2 underline text-blue-500'>Student Enrollment Form IMH Education Centre Bareilly</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="form-group">
           <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
