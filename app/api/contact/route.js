@@ -1,16 +1,17 @@
 // app/api/contact/route.js
 
-import connectDatabase from '@/lib/db2';
+
 import mongoose from 'mongoose';
 // import nodemailer from 'nodemailer';
 import Contact from '@/models/Contact';
+import { connectToDatabase } from '@/lib/db2';
 
 export const POST = async (req) => {
   try {
     const { name, email, tel, message } = await req.json();
 
     // Connect to the database
-    await connectDatabase();
+    await connectToDatabase();
 
     // Save to MongoDB
     const contact = new Contact({ name, email, tel, message });
