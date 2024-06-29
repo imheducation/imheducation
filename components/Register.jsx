@@ -37,7 +37,7 @@ export default function Register() {
       formData.append(key, form[key]);
     }
 
-    const response = await fetch('/api/register', {
+    const response = await fetch('https://imheducation.vercel.app/api/register', {
       method: 'POST',
       body: formData,
     });
