@@ -75,11 +75,11 @@ export default function Register() {
           <input type="text" id="name" name="name" value={form.name} placeholder="Name" required onChange={handleChange} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" />
         </div>
         <div className="form-group">
-          <label htmlFor="fatherOrHusbandName" className="block text-sm font-medium text-gray-700">Father/Husband's Name</label>
+          <label htmlFor="fatherOrHusbandName" className="block text-sm font-medium text-gray-700">Father/Husband&apos;s Name</label>
           <input type="text" id="fatherOrHusbandName" name="fatherOrHusbandName" value={form.fatherOrHusbandName} placeholder="Father/Husband's Name" required onChange={handleChange} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" />
         </div>
         <div className="form-group">
-          <label htmlFor="motherName" className="block text-sm font-medium text-gray-700">Mother's Name</label>
+          <label htmlFor="motherName" className="block text-sm font-medium text-gray-700">Mother&apos;s Name</label>
           <input type="text" id="motherName" name="motherName" value={form.motherName} placeholder="Mother's Name" required onChange={handleChange} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" />
         </div>
         <div className="form-group">
