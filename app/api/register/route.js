@@ -19,7 +19,7 @@ export async function POST(req) {
     const photoFile = formData.get('photo');
     const photoExt = photoFile.name.split('.').pop();
     const photoFileName = `${uuidv4()}.${photoExt}`;
-    const photoPath = join(process.cwd(), 'public/uploads', photoFileName);
+    const photoPath = join(process.cwd(), 'tmp/uploads', photoFileName);
     const photoBuffer = await photoFile.arrayBuffer();
 
     await fs.writeFile(photoPath, Buffer.from(photoBuffer));
